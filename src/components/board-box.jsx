@@ -5,5 +5,11 @@ import React from 'react';
 // THE  BOX COMPONENT
 
 export const Box =(props) => {
-    
+    return (
+        <button className = "board_box" onClick={props.onClick}>
+            
+        </button>
+
+
+    )
 }
