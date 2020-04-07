@@ -41,7 +41,8 @@ storage = new Storage()
 
 // Handle click on boxes on the board
 
-handleBoxClick(index){
+handleBoxClick(index)
+    {
 
     // get current state of boxes
     const boxes = this.state.boxes.slice()
@@ -49,6 +50,12 @@ handleBoxClick(index){
     // get history of boxes
 
     let history = this.state.history
+
+    // stop the game if it contains winning combination
+
+    if(utils.findWinner(boxes)|| boxes[index]){
+        return
+    };
 
 
 }
