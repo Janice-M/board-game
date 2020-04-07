@@ -69,5 +69,12 @@ handleBoxClick(index)
     // add move to game history 
     history.push(this.state.xIsNext ? 'x' :'0')
 
+    //update component state with new data
 
+    this.setState({
+
+        boxes: boxes,
+        history: history,
+        xIsNext: !this.state.xIsNext
+    })
 }
