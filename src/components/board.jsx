@@ -3,7 +3,7 @@
 //src/componentts/ board.jsx
 
 
-// impoertations dzaddy 
+// importations dzaddy 
 
 import React from 'react';
 import {link } from 'react-router-dom';
@@ -18,4 +18,23 @@ import { Box } from './board-box';
 
 // importing utility functions
 
-import * as utils from '../utils/functions'
+import * as utils from '../utils/functions';
+
+//Creaate Board component
+
+export class Board extends React.Component{
+    constructor(props){
+        super(props)
+
+        //initialize state component 
+            this.state={
+                boxes:Array(9).fill(null),
+                history:[],
+                xIsNext: true
+            }
+
+ 
+
+}
+
+}
