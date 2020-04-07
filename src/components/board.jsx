@@ -55,7 +55,12 @@ handleBoxClick(index)
 
     if(utils.findWinner(boxes)|| boxes[index]){
         return
-    };
+    }
+
+    //stop the game if all the boxes are filled
+    if (utils.areAllBoxesClicked(boxes)===true){
+        return
+    }
 
 
 }
