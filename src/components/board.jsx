@@ -46,5 +46,9 @@ handleBoxClick(index){
     // get current state of boxes
     const boxes = this.state.boxes.slice()
 
+    // get history of boxes
+
+    let history = this.state.history
+
 
 }
