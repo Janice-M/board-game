@@ -66,5 +66,8 @@ handleBoxClick(index)
 
     boxes[index]=this.state.xIsNext? 'x' : 'o'
 
+    // add move to game history 
+    history.push(this.state.xIsNext ? 'x' :'0')
+
 
 }
