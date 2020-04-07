@@ -32,9 +32,9 @@ export class Board extends React.Component{
                 history:[],
                 xIsNext: true
             }
-
- 
-
-}
+        }
 
 }
+// Create instance for Storage object 
+
+storage = new Storage()
