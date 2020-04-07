@@ -62,5 +62,9 @@ handleBoxClick(index)
         return
     }
 
+    // Mark the box either as 'x' or 'o'
+
+    boxes[index]=this.state.xIsNext? 'x' : 'o'
+
 
 }
