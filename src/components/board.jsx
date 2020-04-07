@@ -78,3 +78,14 @@ handleBoxClick(index)
         xIsNext: !this.state.xIsNext
     })
 }
+
+//board restart to the initial state
+
+handleBoardrestart = () => {
+    this.setState({
+        boxes: Array(9).fill(null),
+        history: [],
+        xIsNext: true
+    })
+
+}
