@@ -38,3 +38,13 @@ export class Board extends React.Component{
 // Create instance for Storage object 
 
 storage = new Storage()
+
+// Handle click on boxes on the board
+
+handleBoxClick(index){
+
+    // get current state of boxes
+    const boxes = this.state.boxes.slice()
+
+
+}
