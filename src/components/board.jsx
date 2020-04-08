@@ -110,6 +110,13 @@ render()
             //push data about the winner into the database 
             this.storage.update(['${winner} won !!!!'])
         }
+        else if (!winner && isFilled){
+           // game drawn 
+           status ='Game drawn suckers!'
+           //push data about drawn game to data base
+           this.storage.update (['game drawn'])
+        }
+        ele
 
 
 
