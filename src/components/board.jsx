@@ -116,7 +116,13 @@ render()
            //push data about drawn game to data base
            this.storage.update (['game drawn'])
         }
-        ele
+        else {
+            // if there is no winner and the game is not drawn ask the next palyer to make a move
+
+            
+            status ='It is ${(this.state.xIsnNext ? 'x' : 'o')}'s turn'
+
+        }
 
 
 
