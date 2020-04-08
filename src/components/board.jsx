@@ -89,3 +89,17 @@ handleBoardrestart = () => {
     })
 
 }
+
+render() 
+{
+    // Get winner (if there is any)
+    const winner = utilis.findWinner(this.state.boxes)
+
+    //are dem boxes all filled
+
+    const isFilled = utilis.areAllBoxesClicked(this.state.boxes)
+
+
+
+
+}
