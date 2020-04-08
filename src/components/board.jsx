@@ -105,7 +105,10 @@ render()
         if (winner ){
             //status message for when there is a winner on the tictactoe game
 
-            status = 'The Winner is : $ {winner}!'
+            status = 'The Winner is : ${winner}!'
+
+            //push data about the winner into the database 
+            this.storage.update(['${winner} won !!!!'])
         }
 
 
