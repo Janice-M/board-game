@@ -99,6 +99,15 @@ render()
 
     const isFilled = utilis.areAllBoxesClicked(this.state.boxes)
 
+    // status message
+
+    let status 
+        if (winner ){
+            //status message for when there is a winner on the tictactoe game
+
+            status = 'The Winner is : $ {winner}!'
+        }
+
 
 
 
