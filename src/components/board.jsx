@@ -120,9 +120,9 @@ render()
             // if there is no winner and the game is not drawn ask the next palyer to make a move
 
             
-            status ='It is ${(this.state.xIsnNext ? 'x' : 'o')}'s turn'
+            status = "It is ${(this.state.xIsnNext ? 'x' : 'o')}'s turn. "
 
-        }
+    }
 
 
 
