@@ -127,6 +127,7 @@ render()
     return (
         
         /*link to score board */
+        <link to ="/" className="board-link">Go Back to ScoreBoard habibi</link>
 
     )
 
