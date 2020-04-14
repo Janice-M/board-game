@@ -134,7 +134,13 @@ render()
         <div className="board-wrapper"> 
             <div className= "board" >
                  <h2 className="board-heading">{status}</h2>
+                 <div className="board-row">
+                            <Box value={this.state.boxes[0]} onClick={() => this.handleBoxClick(0)} />
 
+                            <Box value={this.state.boxes[1]} onClick={() => this.handleBoxClick(1)} />
+
+                            <Box value={this.state.boxes[2]} onClick={() => this.handleBoxClick(2)} />
+                    </div>
             </div>
 
         </div>
