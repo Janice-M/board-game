@@ -129,6 +129,17 @@ render()
         /*link to score board */
         <link to ="/" className="board-link">Go Back to ScoreBoard habibi</link>
 
+        /* the game board */
+        
+        <div className="board-wrapper"> 
+            <div className= "board" >
+                 <h2 className="board-heading">{status}</h2>
+
+            </div>
+
+        </div>
+
+
     )
 
 
