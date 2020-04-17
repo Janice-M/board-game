@@ -19,3 +19,24 @@ export class Scoreboard component extends Reach.component {
                 scoreboard: storage
             })
 }
+
+render() {
+    return (
+      <div className="game">
+        <h1>Recent games:</h1>
+
+                {/* List with previous games */}
+        <ul>
+          {this.state.scoreboard.map((leader, key) => {
+            return <li key={key}>{leader}</li>
+          })}
+        </ul>
+
+                /* Link to start new game */
+        <Link to="/board">
+          <button className="btn">Start new game</button>
+        </Link>
+      </div>
+    )
+  }
+}
