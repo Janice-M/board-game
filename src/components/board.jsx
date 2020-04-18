@@ -170,7 +170,7 @@ render()
              </ul>
          </div>
         /* restart the game  */
-        {winner && <div className="board-footer">
+        winner && <div className="board-footer">
          
 <button className="btn" onClick={this.handleBoardRestart}>Start new game</button> 
         </div>
