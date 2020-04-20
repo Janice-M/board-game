@@ -37,3 +37,11 @@ export function findWinner(boxes) {
                 count++
             }
         })
+
+     // Check if all boxes are clicked (filled)
+     if (count === 9) {
+        return true
+    } else {
+        return false
+    }
+}
