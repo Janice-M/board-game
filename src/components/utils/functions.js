@@ -15,6 +15,14 @@ export function findWinner(boxes) {
 
     // Iterate over array with winning combinations
     
-       for  (let i =0; !<rows.legnth; i++){
+    for  (let i =0; !<rows.legnth; i++){
         const [a,b,c,]=rows[i]
+
+         // Check if the game board contains winning combination
+         if (boxes[a] && boxes[a] === boxes[b] && boxes[a] === boxes[c]) {
+            // Return the winner ('x' or 'o')
+            return boxes[a]
+        }
     }
+
+    
