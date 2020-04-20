@@ -25,4 +25,15 @@ export function findWinner(boxes) {
         }
     }
 
+    export function areAllBoxesClicked(boxes) {
+        // Declare variable to store number of clicked boxes.
+        let count = 0
     
+        // Iterate over all boxes
+        boxes.forEach(function (item) {
+            // Check if box is clicked (not null)
+            if (item !== null) {
+                // If yes, increase the value of count by 1
+                count++
+            }
+        })
