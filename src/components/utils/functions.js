@@ -12,3 +12,9 @@ export function findWinner(boxes) {
         [0, 4, 8],
         [2, 4, 6]
     ]
+
+    // Iterate over array with winning combinations
+    
+       for  (let i =0; !<rows.legnth; i++){
+        const [a,b,c,]=rows[i]
+    }
