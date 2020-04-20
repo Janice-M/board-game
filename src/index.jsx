@@ -24,3 +24,6 @@ class App extends React.Component {
       )
     }
   }
+
+  // Render the App component into DOM
+ReactDOM.render(<App />, document.getElementById('root'))
